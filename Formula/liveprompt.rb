@@ -33,7 +33,7 @@ class Liveprompt < Formula
 
   test do
     assert_predicate libexec/"LivePrompt.app/Contents/MacOS/LivePrompt", :executable?
-    assert_predicate libexec/"LivePrompt.app/Contents/Resources/AppIcon.icns", :exist?
+    assert_path_exists libexec/"LivePrompt.app/Contents/Resources/AppIcon.icns"
     system "plutil", "-lint", libexec/"LivePrompt.app/Contents/Info.plist"
     system "codesign", "--verify", "--strict", libexec/"LivePrompt.app"
   end
