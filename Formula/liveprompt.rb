@@ -1,8 +1,8 @@
 class Liveprompt < Formula
   desc "Live English captions, Japanese translation, and conversation suggestions"
   homepage "https://github.com/nanonigit/LivePrompt"
-  url "https://github.com/nanonigit/LivePrompt/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "2a38108bcac6023af19684c963cced27ceab44b39be3f9ba3e06e0397dba6eeb"
+  url "https://github.com/nanonigit/LivePrompt/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "c61b8d18d4e9577eb7fcb309536716848d1baed08050a69039c6bdb8eef34cd0"
   license "MIT"
 
   depends_on :macos

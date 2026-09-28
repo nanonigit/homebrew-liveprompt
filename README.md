@@ -11,6 +11,8 @@ liveprompt
 
 The app is installed inside the Homebrew keg. `liveprompt` opens it. On first use, allow **System Audio Recording** in macOS. Apple Intelligence is required for English question and reply suggestions; captions and translation can work without it.
 
+The menu bar icon can reopen the main window and start or stop capture. In the main window, you can adjust prompt background transparency and optionally enable Launch at Login.
+
 This is a preview release. The initial Core Audio setup can take several minutes on macOS 27, and real Zoom, Meet, and Teams calls have not yet been tested. See the [app README](https://github.com/nanonigit/LivePrompt#readme) for privacy and limitations.
 
 ## License
