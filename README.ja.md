@@ -9,6 +9,8 @@ brew install nanonigit/liveprompt/liveprompt
 liveprompt
 ```
 
+インストール済みの場合は `brew upgrade nanonigit/liveprompt/liveprompt` で更新できます。
+
 アプリ本体は Homebrew の管理ディレクトリに置かれます。**アプリケーション**フォルダにも表示するには、安定した Homebrew のパスへのリンクを作成します。
 
 ```sh
@@ -19,7 +21,7 @@ ln -s "$(brew --prefix nanonigit/liveprompt/liveprompt)/libexec/LivePrompt.app" 
 
 `liveprompt` コマンドでアプリを開きます。初回は macOS の「システムオーディオ録音」を許可してください。英語の質問・返答案には Apple Intelligence が必要です。字幕・翻訳はそれがなくても利用できます。
 
-メニューバーのアイコンから通常画面の再表示と収録の開始・停止ができます。通常画面ではプロンプター背景の透明度と、ログイン時に起動するかを設定できます。
+メニューバーのアイコンから通常画面の再表示と収録の開始・停止ができます。通常画面ではプロンプター背景の透明度、ログイン時の起動、メニューバーと Dock のアイコン表示を設定し、過去30日分の収録開始・終了日時を確認できます。アイコンは少なくとも一方を表示します。履歴には日時だけを保存します。Finder と Dock 用の専用アイコンも含まれます。
 
 これはプレビュー版です。macOS 27 で初回の Core Audio 準備に数分かかる場合があり、Zoom、Meet、Teams の実会議音声は未検証です。プライバシーと制限は[アプリの README](https://github.com/nanonigit/LivePrompt/blob/main/README.ja.md)を参照してください。
 

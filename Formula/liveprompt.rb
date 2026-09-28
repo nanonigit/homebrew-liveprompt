@@ -1,8 +1,8 @@
 class Liveprompt < Formula
   desc "Live English captions, Japanese translation, and conversation suggestions"
   homepage "https://github.com/nanonigit/LivePrompt"
-  url "https://github.com/nanonigit/LivePrompt/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "1d628ba682240c5e942741bc85d7d545932727da2258ee6f268bddc8b765799d"
+  url "https://github.com/nanonigit/LivePrompt/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "d654238fc55ff2e349a93f2095a7ddb4534dff3055399c302aaa160f01d256e4"
   license "MIT"
 
   depends_on arch: :arm64
@@ -33,6 +33,7 @@ class Liveprompt < Formula
 
   test do
     assert_predicate libexec/"LivePrompt.app/Contents/MacOS/LivePrompt", :executable?
+    assert_predicate libexec/"LivePrompt.app/Contents/Resources/AppIcon.icns", :exist?
     system "plutil", "-lint", libexec/"LivePrompt.app/Contents/Info.plist"
     system "codesign", "--verify", "--strict", libexec/"LivePrompt.app"
   end
