@@ -5,7 +5,6 @@ class Liveprompt < Formula
   sha256 "c61b8d18d4e9577eb7fcb309536716848d1baed08050a69039c6bdb8eef34cd0"
   license "MIT"
 
-  depends_on :macos
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
