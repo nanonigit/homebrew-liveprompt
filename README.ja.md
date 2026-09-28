@@ -9,7 +9,15 @@ brew install nanonigit/liveprompt/liveprompt
 liveprompt
 ```
 
-アプリは Homebrew の管理ディレクトリ内に入り、`liveprompt` コマンドで開きます。初回は macOS の「システムオーディオ録音」を許可してください。英語の質問・返答案には Apple Intelligence が必要です。字幕・翻訳はそれがなくても利用できます。
+アプリ本体は Homebrew の管理ディレクトリに置かれます。**アプリケーション**フォルダにも表示するには、安定した Homebrew のパスへのリンクを作成します。
+
+```sh
+ln -s "$(brew --prefix nanonigit/liveprompt/liveprompt)/libexec/LivePrompt.app" /Applications/LivePrompt.app
+```
+
+同名のアプリが既にある場合は上書きしません。Homebrew で更新した後も、リンクは現在の版を指します。LivePrompt をアンインストールした場合は、このリンクを手動で削除してください。
+
+`liveprompt` コマンドでアプリを開きます。初回は macOS の「システムオーディオ録音」を許可してください。英語の質問・返答案には Apple Intelligence が必要です。字幕・翻訳はそれがなくても利用できます。
 
 メニューバーのアイコンから通常画面の再表示と収録の開始・停止ができます。通常画面ではプロンプター背景の透明度と、ログイン時に起動するかを設定できます。
 

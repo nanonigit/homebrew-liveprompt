@@ -9,7 +9,15 @@ brew install nanonigit/liveprompt/liveprompt
 liveprompt
 ```
 
-The app is installed inside the Homebrew keg. `liveprompt` opens it. On first use, allow **System Audio Recording** in macOS. Apple Intelligence is required for English question and reply suggestions; captions and translation can work without it.
+The app stays in Homebrew's managed directory. To make it visible in **Applications**, create a link to the stable Homebrew path:
+
+```sh
+ln -s "$(brew --prefix nanonigit/liveprompt/liveprompt)/libexec/LivePrompt.app" /Applications/LivePrompt.app
+```
+
+This does not overwrite an existing app. The link continues to point to the current Homebrew version after upgrades. Remove the link yourself if you uninstall LivePrompt.
+
+`liveprompt` opens the app. On first use, allow **System Audio Recording** in macOS. Apple Intelligence is required for English question and reply suggestions; captions and translation can work without it.
 
 The menu bar icon can reopen the main window and start or stop capture. In the main window, you can adjust prompt background transparency and optionally enable Launch at Login.
 

@@ -21,6 +21,10 @@ class Liveprompt < Formula
   def caveats
     <<~EOS
       Run LivePrompt with: liveprompt
+      The app is stored in #{opt_prefix}/libexec/LivePrompt.app.
+      To show it in /Applications, run:
+        ln -s "#{opt_prefix}/libexec/LivePrompt.app" /Applications/LivePrompt.app
+      This will not overwrite an existing app.
       The first run needs System Audio Recording permission and may take a few
       minutes to prepare Apple's language assets and Core Audio tap.
       This is a preview release; real Zoom, Meet, and Teams calls are not yet tested.
